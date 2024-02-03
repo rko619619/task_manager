@@ -16,6 +16,7 @@
 /tmp/*
 tmp
 .idea/
+.idea/task_manager.iml
 !/log/.keep
 !/tmp/.keep
 
