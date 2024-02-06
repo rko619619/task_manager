@@ -43,6 +43,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "rubocop-performance"
   gem "simplecov"
+  gem "simplecov-json"
 end
 
 group :development do
