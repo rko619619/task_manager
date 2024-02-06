@@ -2,6 +2,16 @@ require "capybara"
 require "capybara/rspec"
 require "selenium-webdriver"
 require "site_prism"
+require "simplecov"
+require "simplecov-json"
+
+SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::HTMLFormatter,
+  SimpleCov::Formatter::JSONFormatter
+])
+SimpleCov.start do
+  enable_coverage :branch
+end
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

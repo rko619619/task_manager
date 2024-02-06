@@ -19,6 +19,7 @@ tmp
 .idea/task_manager.iml
 !/log/.keep
 !/tmp/.keep
+coverage
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*

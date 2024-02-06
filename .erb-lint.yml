@@ -27,4 +27,3 @@ linters:
         Enabled: false
       Layout/CommentIndentation:
         Enabled: false
-
