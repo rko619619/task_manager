@@ -3,24 +3,14 @@
   <head>
     <title>TaskManager</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-# frozen_string_literal: true
-csrf_meta_tags
- %>
-# frozen_string_literal: true
-csp_meta_tag
- %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-# frozen_string_literal: true
-stylesheet_link_tag 'application', "data-turbo-track": 'reload'
- %>
-# frozen_string_literal: true
-javascript_importmap_tags
- %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-# frozen_string_literal: true
-yield
- %>
+    <%= yield %>
   </body>
 </html>
