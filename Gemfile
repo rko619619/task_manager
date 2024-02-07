@@ -45,6 +45,7 @@ group :development, :test do
   gem "simplecov"
   gem "simplecov-json"
   gem "simplecov-cobertura"
+  gem 'dotenv-rails'
 end
 
 group :development do
