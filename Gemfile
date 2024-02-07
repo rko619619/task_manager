@@ -7,7 +7,7 @@ gem "rails", "~> 7.0.8"
 
 gem "sprockets-rails"
 
-gem "sqlite3", "~> 1.4"
+gem "pg", "~> 1.1"
 
 gem "puma", "~> 5.0"
 
@@ -27,7 +27,7 @@ gem "activeadmin"
 gem "devise"
 gem "site_prism"
 gem "erb_lint"
-gem "pg"
+gem "pg", "~> 1.1"
 gem "rubocop-rails"
 gem "activeadmin"
 gem "factory_bot"
@@ -44,6 +44,7 @@ group :development, :test do
   gem "rubocop-performance"
   gem "simplecov"
   gem "simplecov-json"
+  gem "simplecov-cobertura"
 end
 
 group :development do
