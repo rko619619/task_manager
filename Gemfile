@@ -44,6 +44,7 @@ group :development, :test do
   gem "rubocop-performance"
   gem "simplecov"
   gem "simplecov-json"
+  gem "simplecov-cobertura"
 end
 
 group :development do
