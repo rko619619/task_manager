@@ -3,9 +3,9 @@ services:
   app:
     image: rko619619/task_manager:latest
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWD: example
-      POSTGRES_HOST: db
+      POSTGRES_USER: ${DOCKER_POSTRGES_USER}
+      POSTGRES_PASSWD: ${DOCKER_POSTRGES_PASSWD}
+      POSTGRES_HOST: ${DOCKER_POSTRGES_HOST}
     ports:
       - 3000:3000
   db:
