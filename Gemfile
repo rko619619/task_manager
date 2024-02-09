@@ -7,8 +7,6 @@ gem "rails", "~> 7.0.8"
 
 gem "sprockets-rails"
 
-gem "pg", "~> 1.1"
-
 gem "puma", "~> 5.0"
 
 gem "importmap-rails"
@@ -29,7 +27,6 @@ gem "site_prism"
 gem "erb_lint"
 gem "pg", "~> 1.1"
 gem "rubocop-rails"
-gem "activeadmin"
 gem "factory_bot"
 
 group :development, :test do
@@ -45,7 +42,7 @@ group :development, :test do
   gem "simplecov"
   gem "simplecov-json"
   gem "simplecov-cobertura"
-  gem 'dotenv-rails'
+  gem "dotenv-rails"
 end
 
 group :development do

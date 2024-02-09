@@ -1,15 +1,6 @@
-require "capybara"
-require "capybara/rspec"
-require "selenium-webdriver"
-require "site_prism"
 require "simplecov"
 require "simplecov-json"
 require "simplecov-cobertura"
-
-SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
-  SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::JSONFormatter
-])
 
 SimpleCov.start "rails" do
   use_merging false
@@ -25,6 +16,16 @@ SimpleCov.start "rails" do
   add_filter "storage"
   add_filter "log"
 end
+
+SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::HTMLFormatter,
+  SimpleCov::Formatter::JSONFormatter
+])
+
+require "capybara"
+require "capybara/rspec"
+require "selenium-webdriver"
+require "site_prism"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
