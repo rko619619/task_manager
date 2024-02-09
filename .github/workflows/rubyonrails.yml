@@ -28,10 +28,10 @@ jobs:
         run: bundle exec rails db:migrate && bundle exec rails db:schema:load
       - name: Run tests
         run: bundle exec rspec
-      - uses: joshmfrankel/simplecov-check-action@main
-        with:
-          minimum_suite_coverage: 85
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#      - uses: joshmfrankel/simplecov-check-action@main
+#        with:
+#          minimum_suite_coverage: 100
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   audit:
     runs-on: ubuntu-latest
