@@ -420,7 +420,6 @@ DEPENDENCIES
   standard-rails
   stimulus-rails
   turbo-rails
-  tzinfo-data
   web-console
 
 RUBY VERSION
