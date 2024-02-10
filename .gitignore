@@ -21,8 +21,8 @@ tmp
 !/log/.keep
 !/tmp/.keep
 coverage
-
 .env
+storage
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
