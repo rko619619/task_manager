@@ -13,6 +13,7 @@ gem "jbuilder"
 gem "bootsnap", require: false
 gem "activeadmin"
 gem "devise"
+gem "sassc-rails"
 gem "site_prism"
 gem "erb_lint"
 gem "pg", "~> 1.1"
